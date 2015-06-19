@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<script type="text/javascript" src="js/page-1.4.js"></script>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="page"></div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="page2"></div>
+</body>
+<script type="text/javascript">
+  Page({
+    id: 'page',
+    count:  50
+  });
+
+  Page({
+    id: 'page2',
+    num:    7,
+    count:  100,
+    targetPage: 50,
+    url:  'http://www.baidu.com',
+    data: {
+      '参数1': '1',
+      '参数2': '2',
+      'page': '分页名',
+    },
+    waiting:    function (){
+      //等待事件
+    },
+    success:  function (data){
+    }
+  })
+</script>
+</html>
