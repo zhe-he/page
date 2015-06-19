@@ -5,7 +5,6 @@
 /*
 *Page 分页
 *by:    zhe-he
-*e-mail: 460013464@qq.com
 *last-updata: 2015-01-11
 *version: 1.4
 
