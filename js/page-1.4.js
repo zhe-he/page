@@ -93,7 +93,12 @@
                            + '" aria-label="页码输入框" type="number"><span class="text">页</span><span class="'
                            + arr[10]
                            + '" role="button" tabindex="0">确定</span></div></div></div>';
-        if(num == 1 || !num) this.box.style.display = 'none';
+        this.box.style.opacity = '1';
+        this.box.style.filter = 'alpha(opacity=100)';
+        if(num == 1 || !num) {
+            this.box.style.opacity = '0';
+            this.box.style.filter = 'alpha(opacity=0)';
+        }
     }
 
 
